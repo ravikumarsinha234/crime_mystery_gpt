@@ -52,14 +52,6 @@ A research project exploring the use of GPT-2 to generate crime mystery stories,
 # Clone the repository
 git clone https://github.com/yourusername/crime-mystery-gpt.git
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-
 ## Citation
 If you use this work in your research, please cite:
 
