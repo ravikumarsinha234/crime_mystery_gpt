@@ -47,6 +47,20 @@ A research project exploring the use of GPT-2 to generate crime mystery stories,
 5. Enhance genre-specific storytelling capabilities
 
 
+## Reference
+The work we performed is inspired from the sebastian raschka and andrej karapathy. Due credit should go to them.
+
+@book{build-llms-from-scratch-book,
+  author       = {Sebastian Raschka},
+  title        = {Build A Large Language Model (From Scratch)},
+  publisher    = {Manning},
+  year         = {2024},
+  isbn         = {978-1633437166},
+  url          = {https://www.manning.com/books/build-a-large-language-model-from-scratch},
+  github       = {https://github.com/rasbt/LLMs-from-scratch}
+}
+
+
 ## Installation
 ```bash
 # Clone the repository
@@ -56,3 +70,6 @@ git clone https://github.com/yourusername/crime-mystery-gpt.git
 If you use this work in your research, please cite:
 
 Sinha, R. K., & Esaulov, V. (2022). Building a GPT for Character-Level Language Modeling.
+
+
+
