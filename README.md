@@ -2,80 +2,65 @@
 This project try to explore the idea of the creation of the large language model for the crime mystery novels🧟🕷🔪👻🎬. It helps to understand the world of generative AI in a much better way. How can we do more in the space of large language model and maybe try to create a better story and narative to the readers.
 
 
-Project Overview
-This research project explores the application of a GPT-2 based language model for generating crime mystery stories. By leveraging deep learning techniques, we aim to understand the potential of transformer models in creating genre-specific narratives with intricate plot structures and character motivations.
-Research Motivation
-Crime and mystery genres present unique challenges for language models due to their complex narrative requirements:
+# Crime Mystery Story Generation using GPT-2
 
-Maintaining suspense
-Preserving logical plot consistency
-Capturing intricate character motivations
-Gradual revelation of plot elements
+## Overview
+A research project exploring the use of GPT-2 to generate crime mystery stories, focusing on understanding the model's ability to capture genre-specific narrative elements.
 
-Dataset
-Data Source
+## Dataset Details
+- **Source**: Hugging Face Mystery Crime Books dataset
+- **Total Characters**: 562,489
+- **Total Tokens**: 136,309
+- **Train/Validation Split**: 90/10
+- **Text Sources**: Public domain crime mystery novels, including works by Sir Arthur Conan Doyle
 
-Hugging Face Mystery Crime Books dataset by Aleksey Korshuk
-Sourced from public domain texts, including works by Sir Arthur Conan Doyle
+## Model Specifications
+- **Model Type**: GPT-2 Small
+- **Total Parameters**: 124 million
+- **Vocabulary Size**: 50,257 tokens
+- **Context Length**: 1,024 tokens
+- **Embedding Dimension**: 768
+- **Transformer Layers**: 12
+- **Attention Heads**: 12
 
-Dataset Statistics
+## Training Setup
+- **Optimizer**: AdamW
+- **Learning Rate**: 0.0004
+- **Weight Decay**: 0.1
+- **Dropout Rate**: 0.1
+- **Batch Size**: 64
+- **Total Epochs**: 50
+- **Hardware**: Nvidia T4 GPU
 
-Total characters: 562,489
-Total tokens: 136,309
-Train/Validation Split: 90/10
+## Research Challenges
+- Generating coherent crime mystery narratives
+- Maintaining suspense and plot consistency
+- Handling complex character motivations
+- Overcoming limited dataset diversity
 
-Model Architecture
-Configuration
 
-Model Type: GPT-2 Small
-Total Parameters: 124 million
-Vocabulary Size: 50,257 tokens
-Context Length: 1,024 tokens
-Embedding Dimension: 768
-Transformer Layers: 12
-Attention Heads: 12
+## Future Research Directions
+1. Expand dataset to include more diverse crime mystery texts
+2. Implement advanced decoding strategies
+3. Explore reinforcement learning techniques
+4. Improve narrative coherence
+5. Enhance genre-specific storytelling capabilities
 
-Key Features
 
-Token Embeddings
-Positional Embeddings
-Multi-head Self-Attention
-Autoregressive Text Generation
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/crime-mystery-gpt.git
 
-Training Configuration
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
 
-Optimizer: AdamW
-Learning Rate: 0.0004
-Weight Decay: 0.1
-Dropout Rate: 0.1
-Batch Size: 64
-Total Epochs: 50
-Hardware: Nvidia T4 GPU
+# Install dependencies
+pip install -r requirements.txt
 
-Preprocessing Techniques
 
-Regular expression-based tokenization
-Byte Pair Encoding (BPE) for handling out-of-vocabulary words
-Sliding window approach for sequence prediction
+## Citation
+If you use this work in your research, please cite:
 
-Evaluation Metrics
-
-Cross-entropy loss
-Perplexity
-BLEU and ROUGE scores
-Embedding-based similarity
-Token-based F1 score for genre-specific elements
-
-Key Challenges and Observations
-
-Initial model generated nonsensical text
-Observed overfitting due to limited dataset size
-Difficulty in maintaining narrative consistency
-
-Future Work
-
-Expand dataset diversity
-Implement advanced decoding strategies
-Explore reinforcement learning techniques
-Improve narrative coherence
-Enhance genre-specific storytelling capabilities
+Sinha, R. K., & Esaulov, V. (2022). Building a GPT for Character-Level Language Modeling.
