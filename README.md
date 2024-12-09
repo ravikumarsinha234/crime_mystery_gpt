@@ -50,16 +50,12 @@ A research project exploring the use of GPT-2 to generate crime mystery stories,
 ## Reference
 The work we performed is inspired from the sebastian raschka and andrej karapathy. Due credit should go to them.
 
-@book{build-llms-from-scratch-book,
-  author       = {Sebastian Raschka},
-  title        = {Build A Large Language Model (From Scratch)},
-  publisher    = {Manning},
-  year         = {2024},
-  isbn         = {978-1633437166},
-  url          = {https://www.manning.com/books/build-a-large-language-model-from-scratch},
-  github       = {https://github.com/rasbt/LLMs-from-scratch}
-}
+## References
 
+1. **Raschka, S.** (2024). *Build A Large Language Model (From Scratch)*. Manning. ISBN: 978-1633437166.  
+   Available at: [Manning](https://www.manning.com/books/build-a-large-language-model-from-scratch)  
+   GitHub Repository: [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+2. https://www.youtube.com/watch?v=l8pRSuU81PU
 
 ## Installation
 ```bash
